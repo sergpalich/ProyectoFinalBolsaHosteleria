@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../public/img/camarerofondo5.jpg');
+  background-size: cover;        /* Ajusta la imagen para que cubra todo el fondo */
+  background-position: center;   /* Centra la imagen */
+  background-repeat: no-repeat;  /* Evita que la imagen se repita */
+  background-attachment: fixed;  /* Hace que la imagen de fondo esté fija mientras se hace scroll */
+  min-height: 100vh;             /* Asegura que el fondo cubra al menos el 100% de la pantalla */
+  width: 100vw;                  /* Asegura que el fondo cubra el ancho completo */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos verticalmente */
+  align-items: center;    /* Centra horizontalmente */
+  justify-content: center; /* (Opcional) Centra verticalmente si lo deseas */
+  min-height: 100vh;       /* Hace que el contenedor ocupe toda la altura de la pantalla */
+  text-align: center;      /* Alinea el texto en el centro */
+  padding: 20px;
+}
+
+.welcomePageMessage {
+  color: #B8001F;
+  text-align: center;
+  padding: 50px;
+  font-size: 1rem;
+  border-style: none;
+  border-radius: 0;
+  background-color: rgba(250, 223, 161, 0.9);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Authentification styles */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.auth-forms {
+  background-color: rgba(250, 223, 161, 0.9);
+  padding: 20px;
+  margin: 150px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-forms input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.auth-forms button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #7b27039a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-forms button:hover {
+  background-color: #2c0fe4;
+}
+
+.user-info {
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 100px;
+}
+
+.user-info button {
+  padding: 10px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-info button:hover {
+  background-color: #e41e1e;
+}
+
+
+.formato_busq_vacantes {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative; /* Para mantener su posición en la parte superior */
+  top: 0;
+}
+
+.formato_busq_vacantes div {
+  flex: 1; /* Cada campo ocupa el mismo espacio */
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.formato_busq_vacantes div:last-child {
+  margin-right: 0; /* El último div no tendrá margen a la derecha */
+}
+
+.formato_busq_vacantes input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.formato_busq_vacantes button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.formato_busq_vacantes button:hover {
+  background-color: #0056b3;
+}
+
+.busq_result {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los círculos se ajusten en varias líneas */
+  justify-content: space-around; /* Espacia los círculos de forma uniforme */
+  gap: 20px; /* Espaciado entre los círculos */
+}
+
+.circulo {
+  background-color: yellow;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circulo p {
+  margin: 5px 0;
+}
+
+/* Estilo para pantallas grandes */
+@media (min-width: 768px) {
+  .busq_result {
+    justify-content: flex-start;
+  }
+
+  .circulo {
+    width: 150px; /* Agrandamos el círculo en pantallas grandes */
+    height: 150px;
+  }
+}
+
+/* Máximo 3 círculos por fila en pantallas grandes */
+@media (min-width: 1024px) {
+  .busq_result {
+    justify-content: space-between;
+  }
+
+  .circulo {
+    flex-basis: calc(33.333% - 40px); /* 3 por fila con espacio entre ellos */
+  }
+}
+
+
+.vacancy_candidate_details {
+  color: #B8001F;
+  text-align: center;
+  margin-top: 100px;
+  padding: 50px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  font-size: 1rem;
+  border-style: none;
+  border-radius: 0;
+  background-color: rgba(250, 223, 161, 0.9);
+  width: 100%;
+  height: 10%;
+  box-sizing: border-box;
+}
+
