@@ -5,9 +5,9 @@ const Welcome = () => {
     return (
         <div className='welcome-container'>
             <h2 className='welcomePageMessage'>
-                Buscas el personal de hosteleria para afrontar cambios de ultima hora o 
-                estas buscando para hacer extras esta noche en sector hosteleria? <br/><br/>
-                ¡Estás en buen sitio!
+                ¿Buscas personal de hosteleria para afrontar cambios de última hora? ¿Eres 
+                un profesional y estás buscando dónde hacer horas extras esta noche en sector de hosteleria? <br/><br/>
+                ¡Estás en el sitio perfecto!
             </h2>
             
             <div className="auth-link-container">
