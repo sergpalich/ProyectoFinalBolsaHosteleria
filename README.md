@@ -15,3 +15,7 @@ El Workflow ideal en la App sera - usuario(candidato): usuario registra con emai
 Despues que usuario(establecimiento) se accepta el candidato, se puede generar la documentacion de baja y alta en SS segun la legislacion viginte con costes de gestion correspondientes de gestion.
 
 Actualmente las sistema esta en el estado de B-version: no hay push notification, no hay opcion de ver detalles de empresa ni candidato y otros limitaciones. 
+
+![Diseño inicial](image.png)
+
+![Diseño incial. 2](image-1.png)
